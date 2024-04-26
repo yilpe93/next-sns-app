@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        루트 레이아웃
+        {children}
+      </body>
     </html>
   );
 }
+
+// #Layout 계층 구조
+// RootLayout -> [Page]Layout -> [Page]
