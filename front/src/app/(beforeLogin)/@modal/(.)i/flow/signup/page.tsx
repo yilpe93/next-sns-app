@@ -1,5 +1,10 @@
 import SignupModal from "@/app/(beforeLogin)/_component/SignupModal";
 
 export default function Signup() {
-  return <SignupModal />;
+  return (
+    <>
+      인터셉터
+      <SignupModal />
+    </>
+  );
 }

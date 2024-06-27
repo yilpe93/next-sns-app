@@ -1,13 +1,13 @@
-export default function Layout({
-  children,
-  modal,
-}: Readonly<{
+import styles from "@/app/(beforeLogin)/_component/main.module.css";
+
+type Props = {
   children: React.ReactNode;
   modal: React.ReactNode;
-}>) {
+};
+
+export default function Layout({ children, modal }: Readonly<Props>) {
   return (
-    <div>
-      비포 로그인 레이아웃
+    <div className={styles.container}>
       {children}
       {modal}
     </div>
